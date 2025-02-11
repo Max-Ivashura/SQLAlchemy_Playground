@@ -1,2 +1,3 @@
 /.venv/
-/chapter_1_introduction/lesson_1_install_and_core/lecture/example.db
+/.idea/
+**.db
