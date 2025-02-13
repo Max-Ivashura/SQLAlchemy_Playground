@@ -1,3 +1,5 @@
 /.venv/
 /.idea/
 **.db
+/chapter_5_migrations/lesson_1_alembic_setup/lecture/alembic/
+**.ini
