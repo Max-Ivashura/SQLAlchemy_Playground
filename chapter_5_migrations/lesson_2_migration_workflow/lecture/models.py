@@ -1,34 +1,7 @@
 # lecture/models.py
 from datetime import datetime
 
-from sqlalchemy import Column, Integer, String, create_engine, DateTime
-from sqlalchemy.ext.declarative import declarative_base
-
-Base = declarative_base()
-
-class User(Base):
-    __tablename__ = 'users'
-
-    id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
-    age = Column(Integer)
-
-    def __repr__(self):
-        return f"<User(name={self.name}, age={self.age})>"
-
-class Product(Base):
-    __tablename__ = 'products'
-
-    id = Column(Integer, primary_key=True)
-    name = Column(String, nullable=False)
-    price = Column(Integer)
-
-    def __repr__(self):
-        return f"<Product(name={self.name}, price={self.price})>"
-
-# lecture/models.py
-
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
 
